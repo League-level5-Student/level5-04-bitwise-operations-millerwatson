@@ -10,7 +10,7 @@ public class BinaryPrinter {
 	 */
 
 	
-	public void printByteBinary(byte b) {
+	public static void printByteBinary(byte b) {
 		// We first want to print the bit in the one's place
 		for (int i = 7; i > -1; i--) {
 			int shifted = b >> i;
@@ -27,7 +27,7 @@ public class BinaryPrinter {
 		//Use this method to print the remaining 7 bits of b
 	}
 	
-	public void printShortBinary(short s) {
+	public static void printShortBinary(short s) {
 		// Create 2 byte variables
 
 		// Use bit shifting and masking (&) to save the firs
@@ -43,7 +43,7 @@ public class BinaryPrinter {
 		printByteBinary(bottom);
 	}
 	
-	public void printIntBinary(int i) {
+	public static void printIntBinary(int i) {
 		// Create 2 short variables
 		short top;
 		short bottom;
